@@ -1,0 +1,9 @@
+<h2>Hay {{totalRepositorios()}} repositorios disponibles</h2>
+	  	<ul>
+	  		<li class="listItem" *ngFor="let repository of repositories">
+	  			<h3 class="repTitle">{{repository.name}}</h3>
+	  			<p class="description"><b>Descripción:</b> {{repository.description}}</p>
+	  			<p><b>Languaje:</b> {{ repository.language }}</p>
+	  			<a href="{{repository.html_url}}">Link</a>
+	  		</li>
+	  	</ul>
